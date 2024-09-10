@@ -53,6 +53,7 @@ composer create-project laravel/laravel --prefer-dist . "10.*"
 ```
 4.  プロジェクトが作成できたら、`localhost:80`に接続しLaravelのWelcome Pageが表示されるかを確認してください。
 5.  次に、sshの設定を行います。
-6.  compose.ymlと同じ階層に.sshというフォルダを作成してください
-7.  `docker compose exec app bash`でdockerコンテナ内に入ってください。（すでに入っている場合は大丈夫です！）
-8.  コンテナ内に入ったら、``
+6.  `docker compose exec app bash`でdockerコンテナ内に入ってください。（すでに入っている場合は大丈夫です！）
+7.  コンテナ内に入ったら、`ssh-keygen -t rsa`で公開鍵と秘密鍵を作成します。全てEnterで大丈夫です！
+8.  2で作成した.sshディレクトリ配下に2つのファイルができているはずなので、そのうちの`id_rsa.pub`を開き、中身を全てコピーしてください。
+以降の手順はカリキュラム解答のgit編と同じなので、それを見ていただけると助かります。
